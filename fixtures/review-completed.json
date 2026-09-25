@@ -1,0 +1,7 @@
+{
+  "event": "review.completed",
+  "reviewId": "rev-103",
+  "repository": "nicelydone/notifications",
+  "status": "completed",
+  "rating": 3
+}
