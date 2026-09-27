@@ -11,6 +11,7 @@ app.post('/webhooks/review-completed', (req, res) => {
     return res.status(401).json({error: 'Invalid signature'})
   }
 
+  // Signature verified — process the event.
   const event = req.body || {}
   if (event.event !== 'review.completed') {
     return res.status(400).json({error: `Unknown event: ${event.event ?? 'missing'}`})
